@@ -1,11 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import LoginPage from './components/LoginPage';
+import HackContactPage from './components/HackContactPage';
 
 function App() {
+
+  const [isLogin, setIsLogin] = useState<boolean>(false);
+
   return (
-    <LoginPage></LoginPage>
+    <>
+      {isLogin &&  <HackContactPage/>}
+      {!isLogin &&  <LoginPage updateLogin={setIsLogin}/>}
+    </>
   );
 }
 
