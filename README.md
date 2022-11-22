@@ -18,7 +18,9 @@ yarn develop
 - Import contacts in firebase
 
 ## 🏛️ `Technology used`
+- Web App
+- PWA
 - React
 - TypeScript
 - Firebase
-- Netlify
+- [Netlify](https://deploy-preview-3--clinquant-meerkat-1ea8ea.netlify.app/)
