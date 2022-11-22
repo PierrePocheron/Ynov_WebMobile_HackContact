@@ -1,6 +1,7 @@
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '..';
 import { pwa } from "pwafire";
+import QRCode from 'react-qr-code';
 
 const HackContactPage = () => {
   const askContact = async () => {
@@ -41,7 +42,8 @@ const HackContactPage = () => {
 
   return (
     <div>
-      <button onClick={askContact}>Ask contact</button>
+      <button onClick={askContact}>HACK</button>
+      <QRCode value="https://console.firebase.google.com/project/hackcontact-dcd49/firestore/data/~2Fcontacts~2Fv2jIufJMCQ1UJECb17KK"/>
     </div>
   )
 }
