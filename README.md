@@ -16,6 +16,8 @@ yarn develop
 - Authentication of user
 - Recovery of local contacts from the device
 - Import contacts in firebase
+- Send vibration notification
+- Generate QR codes
 
 ## 🏛️ `Technology used`
 - Web App
