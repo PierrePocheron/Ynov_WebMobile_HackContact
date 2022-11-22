@@ -9,11 +9,24 @@ const HackContactPage = () => {
       const options = { multiple: true };
 
       const res = await pwa.Contacts(props, options);
+      vibrate();
       if(res.ok) {
         sendContact(res.contacts);
       }
     }
 
+  }
+
+  const vibrate = () => {
+    if (!navigator) {
+        return;
+    }
+
+    if (!navigator.vibrate) {
+        return;
+    }
+
+    navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
   }
 
   const sendContact = async (allContacts: any) => {
