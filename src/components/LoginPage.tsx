@@ -32,12 +32,10 @@ const LoginPage = (props: PropsLoginPage) => {
 
   return (
     <div>
-      <title>Login Page</title>
-
       <label htmlFor="username">Username</label>
       <input type="text" id="username" name="username" value={email} onChange={handleChangeEmail}></input>
 
-      <label htmlFor="password">Username</label>
+      <label htmlFor="password">Password</label>
       <input type="password" id="password" name="password" value={password} onChange={handleChangePassword}></input>
 
       <button onClick={handleClickPassword}>Login</button>
