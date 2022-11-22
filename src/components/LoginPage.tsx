@@ -33,7 +33,7 @@ const LoginPage = (props: PropsLoginPage) => {
   return (
     <main className="main">
       <div className='container'>
-        <section className="wrapper">
+        <section className="wrapper-login">
           <div className="form">
             <h1 className="text text-large">Sign In 👀</h1>
 
