@@ -1,13 +1,24 @@
-# 🚀 Getting started with Strapi
+# 🚀 Hack Contact
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
-
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
-
+## 🏗️ `Getting started`
+Start Hack Contact application with autoReload enabled.
 ```
 npm run develop
 # or
 yarn develop
 ```
+
+## 🧑🏽‍💻 `Developpement Context`
+- Peer programming
+
+## 🧱 `Features`
+- Firebase connection
+- Authentication of user
+- Recovery of local contacts from the device
+- Import contacts in firebase
+
+## 🏛️ `Technology used`
+- React
+- TypeScript
+- Firebase
+- Netlify
