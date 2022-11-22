@@ -1,5 +1,5 @@
-import db from "../firebase";
 import { collection, addDoc } from 'firebase/firestore';
+import { db } from '..';
 
 const HackContactPage = () => {
   const askContact = () => {
@@ -18,16 +18,9 @@ const HackContactPage = () => {
   }
 
   return (
-    <>
     <div>
-      <head>
-          <title>Hacking page</title>
-        </head>
-        <body>
-          <button onClick={askContact}></button>
-        </body>
+      <button onClick={askContact}>Ask contact</button>
     </div>
-    </>
   )
 }
 
