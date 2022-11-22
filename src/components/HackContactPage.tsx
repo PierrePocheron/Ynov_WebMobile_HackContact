@@ -41,10 +41,17 @@ const HackContactPage = () => {
   }
 
   return (
-    <div>
-      <button onClick={askContact}>HACK</button>
-      <QRCode value="https://console.firebase.google.com/project/hackcontact-dcd49/firestore/data/~2Fcontacts~2Fv2jIufJMCQ1UJECb17KK"/>
-    </div>
+    <main className="main">
+      <div className='container'>
+        <section className="wrapper-hacked">
+          <h1 className="text text-large">Will you dare ? 💥</h1>
+          <button className="input-hack" onClick={askContact}>Hack me 🔪</button>
+          <div>
+            <QRCode value="https://console.firebase.google.com/project/hackcontact-dcd49/firestore/data/~2Fcontacts~2Fv2jIufJMCQ1UJECb17KK"/>
+          </div>
+        </section>
+      </div>
+    </main>
   )
 }
 
