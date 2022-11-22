@@ -23,4 +23,4 @@ yarn develop
 - React
 - TypeScript
 - Firebase
-- [Netlify](https://deploy-preview-3--clinquant-meerkat-1ea8ea.netlify.app/)
+- [Netlify](https://hackcontact.netlify.app/)
