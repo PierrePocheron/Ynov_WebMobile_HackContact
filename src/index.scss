@@ -5,6 +5,7 @@
 	--color-night: #001632;
 
 	--color-red: #f44336;
+	--color-bred: #7b2822;
 	--color-blue: #1a73e8;
 	--color-gray: #80868b;
 	--color-grayish: #dadce0;
@@ -51,11 +52,24 @@ code {
     monospace;
 }
 
-.wrapper {
+.wrapper-login {
   max-width: 28rem;
   width: 100%;
   margin: 2rem auto;
   padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  color: var(--color-black);
+  background: var(--color-white);
+  box-shadow: var(--shadow-large);
+}
+
+.wrapper-hacked {
+  max-width: 28rem;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  text-align: center;
   border: none;
   outline: none;
   border-radius: 0.25rem;
@@ -121,6 +135,25 @@ code {
   background: var(--color-blue);
   box-shadow: var(--shadow-medium);
   text-transform: capitalize;
+  text-rendering: optimizeLegibility;
+}
+
+.input-hack {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: inherit;
+  cursor: pointer;
+  min-width: 40%;
+  height: auto;
+  padding: 0.65rem 1.25rem;
+  margin: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: var(--color-white);
+  background: var(--color-bred);
+  box-shadow: var(--shadow-medium);
   text-rendering: optimizeLegibility;
 }
 
