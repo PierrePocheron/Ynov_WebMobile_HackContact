@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      {isLogin &&  <HackContactPage/>}
-      {!isLogin &&  <LoginPage updateLogin={setIsLogin}/>}
+      {isLogin && <HackContactPage/>}
+      {!isLogin && <LoginPage updateLogin={setIsLogin}/>}
     </>
   );
 }

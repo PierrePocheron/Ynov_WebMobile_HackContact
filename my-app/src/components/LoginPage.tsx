@@ -1,8 +1,6 @@
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useState } from 'react';
 
-const auth = getAuth()
-
 interface PropsLoginPage {
   updateLogin: (isLogin: boolean) => void;
 }
@@ -14,15 +12,14 @@ const LoginPage = (props: PropsLoginPage) => {
 
   const { updateLogin } = props;
 
-  const handleClickPassword = () => {
+  const handleClickPassword = async () => {
     //fetch for api firebase auth
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential: any) => {
+    const auth = getAuth();
+    const { user } = await signInWithEmailAndPassword(auth, email, password);
+    console.log(user);
+    if(user) {
       updateLogin(true);
-    })
-    .catch((error: any) => {
-
-    })
+    }
   }
 
   const handleChangeEmail = (event: any) => {
