@@ -31,15 +31,42 @@ const LoginPage = (props: PropsLoginPage) => {
   }
 
   return (
-    <div>
-      <label htmlFor="username">Username</label>
-      <input type="text" id="username" name="username" value={email} onChange={handleChangeEmail}></input>
+    <main className="main">
+      <div className='container'>
+        <section className="wrapper">
+          <div className="form">
+            <h1 className="text text-large">Sign In 👀</h1>
 
-      <label htmlFor="password">Password</label>
-      <input type="password" id="password" name="password" value={password} onChange={handleChangePassword}></input>
+            <div className="input-control">
+              <label htmlFor="username" hidden>Username</label>
+              <input
+              type="text"
+              id="username"
+              name="username"
+              className="input-field"
+              value={email}
+              onChange={handleChangeEmail}
+              placeholder="Email Address">
+              </input>
+            </div>
 
-      <button onClick={handleClickPassword}>Login</button>
-    </div>
+            <div className="input-control">
+              <label htmlFor="password" hidden>Password</label>
+              <input type="password"
+              id="password"
+              name="password"
+              className="input-field"
+              value={password}
+              onChange={handleChangePassword}
+              placeholder="Password">
+              </input>
+            </div>
+
+            <button className="input-submit" onClick={handleClickPassword}>Login</button>
+          </div>
+        </section>
+      </div>
+    </main>
   )
 }
 
