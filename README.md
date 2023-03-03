@@ -1,5 +1,7 @@
 # 🚀 Hack Contact
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1d7e78e8-a35f-43ce-9442-7cf33ad28354/deploy-status)](https://hackcontact.netlify.app/)
+
 ## 🏗️ `Getting started`
 Start Hack Contact application with autoReload enabled.
 ```
